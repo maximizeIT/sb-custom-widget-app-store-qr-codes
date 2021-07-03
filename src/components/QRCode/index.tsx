@@ -1,13 +1,13 @@
 import React, { FunctionComponent } from "react";
 import CSS from "csstype";
 
-export interface ImageProperties {
+export interface QRCodeProperties {
   url: string;
   alttext: string;
 }
 
-export const Image: FunctionComponent<ImageProperties> = (props) => {
-
+export const QRCode: FunctionComponent<QRCodeProperties> = (props) => {
+  
   const imageStyle: CSS.Properties = {
     fontSize: "16px",
     width: "100%",

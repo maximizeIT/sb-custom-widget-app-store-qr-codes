@@ -44,7 +44,17 @@ export const configurationSchema: JSONSchema7 = {
     titlecolor: {
       type: "string",
       title: "Title Color",
-      default: "#333333"
+      default: "#333333",
+    },
+    setbackground: {
+      type: "boolean",
+      title: "Set Background",
+      default: false,
+    },
+    bgcolor: {
+      type: "string",
+      title: "Background Color",
+      default: "#24B5E1",
     },
   },
 };
@@ -67,5 +77,12 @@ export const uiSchema: UiSchema = {
   titlecolor: {
     "ui:widget": "color",
     "ui:help": "Choose a color for the titles. Default: #333333"
+  },
+  setbackground: {
+    "ui:help": "Do you want to set a background for the whole widget? Default: true"
+  },
+  bgcolor: {
+    "ui:widget": "color",
+    "ui:help": "Choose a color for the background. Default: none"
   },
 };

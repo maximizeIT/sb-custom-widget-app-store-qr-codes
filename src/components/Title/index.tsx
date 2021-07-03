@@ -7,9 +7,11 @@ export interface TitleProperties {
 }
 
 export const Title: FunctionComponent<TitleProperties> = (props) => {
+
+  const titleColor = props.titlecolor ? props.titlecolor : "#333333";
   
   const titleStyle: CSS.Properties = {
-    color: props.titlecolor,
+    color: titleColor,
     padding: "5px",
   };
 

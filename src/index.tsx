@@ -50,7 +50,7 @@ const factory: BlockFactory = (BaseBlockClass, _widgetApi) => {
      */
     public static get observedAttributes(): string[] {
       const defaults = ["content-language", "widget-title", "on-card"];
-      return [...defaults, "urlios", "urlandroid", "showtitles", "titlecolor"];
+      return [...defaults, "urlios", "urlandroid", "showtitles", "titlecolor", "setbackground", "bgcolor"];
     }
 
     /**
@@ -69,7 +69,7 @@ const factory: BlockFactory = (BaseBlockClass, _widgetApi) => {
 const blockDefinition: BlockDefinition = {
     name: "custom-widget-app-store-qr-codes",
     factory: factory,
-    attributes: ['urlios','urlandroid','showtitles','titlecolor'],
+    attributes: ['urlios','urlandroid','showtitles','titlecolor','setbackground','bgcolor'],
     blockLevel: 'block',
     configurationSchema: configurationSchema,
     uiSchema: uiSchema,

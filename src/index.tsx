@@ -73,7 +73,8 @@ const blockDefinition: BlockDefinition = {
     blockLevel: 'block',
     configurationSchema: configurationSchema,
     uiSchema: uiSchema,
-    label: 'App Store QR Codes'
+    label: 'App Store QR Codes',
+    iconUrl: "https://maximizeit.github.io/sb-custom-widget-app-store-qr-codes/resources/qr-code-icon.png",
 };
 
 /**
